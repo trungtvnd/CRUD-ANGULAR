@@ -25,7 +25,7 @@ export class ProductServiceService {
   }
 
   getProductById(id:any):Observable<Product>{
-    return this.httpClient.get<Product>(API_URL + '/api/products/' + id)
+    return this.httpClient.get<Product>(API_URL + '/api/products/' + id, this.httpOption          )
   }
 
   createProduct(product:Product):Observable<Product>{

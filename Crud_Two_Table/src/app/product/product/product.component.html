@@ -23,7 +23,6 @@
         <td>
           <select name="category" id="category" formControlName="category">
             <option *ngFor="let category of categories" value="{{category.id}}">{{ category.name }}</option>
-
           </select>
         </td>
 
@@ -50,6 +49,7 @@
       <th>Name</th>
       <th>Price</th>
       <th>Description</th>
+      <th>Category</th>
       <th>Action</th>
     </tr>
     </thead>
@@ -63,6 +63,7 @@
       </td>
       <td>{{p.price}}</td>
       <td>{{p.description}}</td>
+      <td>{{p.category.name}}</td>
       <td><button (click)="editProduct(p.id)">Edit</button><i class="fa-solid fa-trash-can"></i></td>
 
       <td><button (click)="deleteProduct(p.id)">Delete</button><i class="fa-solid fa-trash-can"></i></td>

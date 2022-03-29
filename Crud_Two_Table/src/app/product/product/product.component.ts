@@ -75,7 +75,7 @@ export class ProductComponent implements OnInit {
   }
 
   public editProduct(id:any){
-    this.productService.getProductById(id).subscribe(data => this.formProduct.patchValue(data));
+    this.productService.getProductById(id).subscribe((data) => this.formProduct.patchValue(data));
     // @ts-ignore
     document.getElementById('submit').innerText = 'Update';
     // @ts-ignore
