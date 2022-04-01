@@ -46,7 +46,7 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
     BrowserAnimationsModule,
 
   ],
-  providers: [httpInterceptorProviders],
+  providers: [],
   bootstrap: [AppComponent]
 })
 
